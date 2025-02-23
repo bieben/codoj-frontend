@@ -1,6 +1,8 @@
 // Add a request interceptor
 import axios from "axios";
 
+axios.defaults.withCredentials = true;
+
 // Add a request interceptor
 axios.interceptors.request.use(
   function (config) {
